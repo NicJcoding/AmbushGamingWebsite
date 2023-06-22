@@ -1,0 +1,66 @@
+body {
+    background-color: #560404;
+}
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 7px 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: black;
+transition: 0.5;
+z-index: 1000;
+
+}
+header .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+header ul li {
+    list-style: none;
+    margin: 10px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #860808;
+    color: black;
+    box-shadow: 0 0 10px #FF0E0E;
+}
+header .action ,searchBx {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+}
+ .navLogo {
+    width: 400%;
+    height: 400%;
+ }
+ 
+
