@@ -1,5 +1,9 @@
 body {
-    background-color: #560404;
+    background-color: black;
+}
+p{
+    color: white;
+    font-size: 18;
 }
 header{
 position: fixed;
@@ -10,7 +14,7 @@ padding: 7px 80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background: black;
+background: #560404;
 transition: 0.5;
 z-index: 1000;
 
@@ -58,9 +62,104 @@ header .action .searchBx input {
     font-size: 1em;
     color: black;
 }
- .navLogo {
-    width: 400%;
-    height: 400%;
- }
- 
 
+
+
+/* Home Baner*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner .bg .content {
+    width: 50%;
+    height: 50%;
+}
+.banner .bg .content h2 {
+    font-size: 5em;
+    color: white;
+    letter-spacing: 1px;
+} 
+.banner .bg .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.banner .bg .content a:hover {
+    background: red;
+    border: none;
+    color:#560404;
+    box-shadow: 0 0 10px red;
+}
+.banner .bg img{
+    width: 600px;
+
+}
+
+/* About */
+
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx {
+    width: 70%;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: white
+}
+.about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color: white;
+}
+.about .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.about .contentBx a:hover {
+    background: red;
+    border: none;
+    color:#560404;
+    box-shadow: 0 0 10px red;
+}
+.about img{
+    width: 800px;
+
+}
