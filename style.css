@@ -19,6 +19,19 @@ transition: 0.5;
 z-index: 1000;
 
 }
+header.sticky {
+    background: rgb(34, 29, 29);
+    box-shadow: 0 5px 20px rgba(249, 1, 1, 0.9);
+}
+/* Scroll bar , what is webkit?*/
+fix this partt!
+::-webkit-scrollbar{
+    width: 8px
+}
+::-webkit-scrollbar-thumb{
+    background: #560404;
+    border-radius: 6px;
+}
 header .logo {
     position: relative;
     color: white;
@@ -76,6 +89,7 @@ header .action .searchBx input {
     justify-content: center;
     align-items: center;
 }
+
 .banner .bg {
     position: relative;
     width: 100%;
@@ -161,5 +175,6 @@ header .action .searchBx input {
 }
 .about img{
     width: 800px;
-
 }
+
+
