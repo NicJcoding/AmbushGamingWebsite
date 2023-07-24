@@ -241,7 +241,7 @@ header .action .searchBx input {
     position: relative;
     height: 10px;
     width: 100%;
-    background: grey;
+    background: rgb(3, 221, 203);
     margin-bottom: 15px;
     border-radius: 10px;
     transform: scalex(0);
@@ -250,13 +250,26 @@ header .action .searchBx input {
 
 }
 .games .cardBox .card .progress-line span{
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 80%;
     border-radius: 10px;
-    background: rgb(56, 154, 56);
-    box-shadow: 0 0 10px blue;
+    background: rgb(3, 221, 203);
+    box-shadow: 0 0 10px rgb(3, 221, 203);
     transform: scalex(0);
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+@keyframes animate{
+    100%{
+        transform: scale(1);
+    }
+}
+.games .cardBox .card .info{
+    border-top: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} 
