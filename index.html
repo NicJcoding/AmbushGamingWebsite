@@ -48,21 +48,31 @@
     <div class="about">
         <div class="contentBx">
             <h2> About Us</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p> Ambush Gaming is aiming to be one of the best mobile gaming organizations in the world! Our team was
+                founded off of friendship first. <br><br>
+                We have been friends and competing in mobile games for nearly 6 years. Most of us starting our
+                professional career from Rules of Survival. We have competed in the following: $20,000 Live me
+                tournament and three $60,000.00 tournaments.<br><br>
+                After rules of survival, our team decided to make our away into Call of Duty Mobile. We competed in
+                Mobile Mayhem, but once call of duty mobile decided to take a different path, we did as well. Aftt Call
+                of Duty Mobile, we decided to play Area F2 and Wild Rift. <br><br> After those 2 games,
+                we decided to play Apex Mobile. Our team performed in the only 2 Mobile Mayhem events that Apex Mobile
+                had. <br> <br>
+                We are now competing in Farlight 84 and we are the best team in North America by far. Ambush
+                is dedicated on being the best organization in mobile gaming. We want to pick up the best teams while
+                valuing friendship first. Remember, laughing with friends and winning tournaments is the best
+                combination.
+
+            </p>
             <a href="#"> Read more</a>
         </div>
         <img src="images/AmbushRoleLogoClean (1).png">
     </div>
-
+    <!-- Games -->
     <div class="games">
         <h2> Current games we are involved in: </h2>
         <ul>
-            <li class="list active"> Mobile games</li>
+            <li class="list active" data-filter="mobile"> Mobile games</li>
         </ul>
         <div class="cardBox">
             <div class="card" data-item="mobile">
@@ -76,6 +86,75 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card" data-item="mobile">
+                <img src="images/warzone mobile.jpeg">
+                <div class="content">
+                    <h4> Warzone Mobile </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class="info">
+                        <p> Team AMBU is waiting on Warzone mobile <br> to release. </p>
+                        <a href="#">Roster</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="images/apex-legends-mobile-high-energy-heroes-how-to-play.webp">
+                <div class="content">
+                    <h4> Apex 2.0 </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class="info">
+                        <p> Team AMBU is waiting on Apex to release. </p>
+                        <a href="#"> Roster</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roster -->
+    <div class="roster">
+        <h2> AMBU </h2>
+        <div class='boxBx'>
+            <div class="box">
+                <img src="/images/84Roster.png">
+                <div class="content">
+                    <h4> AMBU </h4>
+                    <ul>
+                        <li>Player 1: Nixolas</li>
+                        <li>Player 2: Tog </li>
+                        <li>Player 3: Tony</li>
+                        <li>Player 4: iosIcy</li>
+                        <li>Player 5: Kanata </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="contact">
+        <img src="/images/contactus.png">
+        <div class="form">
+            <h1> Contact </h1>
+            <div class="inputBx">
+                <p> Enter Name </p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p> Enter Email</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p> Message </p>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="submit">
+            </div>
+
         </div>
     </div>
     <!-- Look this up in MDN -->
@@ -85,7 +164,31 @@
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
-        })
+        });
+
+        /* Filterable Cards */
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) { }
+                list[j].classList.remove('active');
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for (let k = 0; k < card.length; k++) {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if (card[k].getAttribute('data-item') === dataFilter || dataFilter == 'mobile') {
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
     </script>
 </body>
 
