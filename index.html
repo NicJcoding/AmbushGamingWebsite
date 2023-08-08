@@ -8,6 +8,7 @@
     <title>Ambush Gaming</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body>
@@ -15,11 +16,11 @@
     <header>
         <a href="#" class="logo">Ambush Gaming </a>
         <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Roster</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Roster">Roster</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
         <div class="action">
             <div class="searchBx">
@@ -28,16 +29,16 @@
 
             </div>
         </div>
-        <div class="toggleMenu"> </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
 
     <!----- Home Banner---->
-    <div class="banner">
+    <div class="banner animeX" id="Home">
         <div class="bg">
             <div class="content">
-                <h2> Welcome! </h2>
-                <p> Ambush Gaming is here to dominate the Mobile Competitive Scene! </p>
-                <a href="#" class="btn"> Click me</a>
+                <h2> Welcome </h2>
+                <p> to Ambush Gaming. We thank you for supporting.</p>
+                <a href="#Contact" class="btn"> Join AMBU</a>
             </div>
             <img src="images/AmbushRoleLogoClean (2).png">
         </div>
@@ -45,7 +46,7 @@
 
     <!-- About-->
 
-    <div class="about">
+    <div class="about animeX" id="About">
         <div class="contentBx">
             <h2> About Us</h2>
             <p> Ambush Gaming is aiming to be one of the best mobile gaming organizations in the world! Our team was
@@ -69,7 +70,7 @@
         <img src="images/AmbushRoleLogoClean (1).png">
     </div>
     <!-- Games -->
-    <div class="games">
+    <div class="games animeX" id="Games">
         <h2> Current games we are involved in: </h2>
         <ul>
             <li class="list active" data-filter="mobile"> Mobile games</li>
@@ -82,7 +83,7 @@
                     <div class="progress-line"> <span></span></div>
                     <div class="info">
                         <p> Team AMBU is currently the best team in this Battle Royale game. </p>
-                        <a href="#"> Roster</a>
+                        <a href="#Roster"> Roster</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +95,7 @@
                     <div class="progress-line"> <span></span></div>
                     <div class="info">
                         <p> Team AMBU is waiting on Warzone mobile <br> to release. </p>
-                        <a href="#">Roster</a>
+                        <a href="#Roster">Roster</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +107,29 @@
                     <div class="progress-line"> <span></span></div>
                     <div class="info">
                         <p> Team AMBU is waiting on Apex to release. </p>
-                        <a href="#"> Roster</a>
+                        <a href="#Roster"> Roster</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobile">
+                <img src="images/valorantMobile.webp ">
+                <div class="content">
+                    <h4> Valorant Mobile </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class="info">
+                        <p> Team AMBU is waiting for Valorant Mobile to release. </p>
+                        <a href="#Roster"> Roster</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobile">
+                <img src="images/ArenaBreakout-Banner.jpg">
+                <div class="content">
+                    <h4> Arena Breakout </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class="info">
+                        <p> Team AMBU has an incredible roster for Arena Breakout coming soon. </p>
+                        <a href="#Roster"> Roster</a>
                     </div>
                 </div>
             </div>
@@ -114,19 +137,20 @@
     </div>
 
     <!-- Roster -->
-    <div class="roster">
+    <div class="roster animeX" id="Roster">
         <h2> AMBU </h2>
         <div class='boxBx'>
             <div class="box">
                 <img src="/images/84Roster.png">
                 <div class="content">
-                    <h4> AMBU </h4>
+                    <h3> Roster: </h3>
                     <ul>
                         <li>Player 1: Nixolas</li>
-                        <li>Player 2: Tog </li>
+                        <li>Player 2: Tog</li>
                         <li>Player 3: Tony</li>
                         <li>Player 4: iosIcy</li>
                         <li>Player 5: Kanata </li>
+
                     </ul>
                 </div>
             </div>
@@ -135,17 +159,17 @@
     </div>
 
     <!-- Contact Us -->
-    <div class="contact">
+    <div class="contact animeX" id="Contact">
         <img src="/images/contactus.png">
         <div class="form">
             <h1> Contact </h1>
             <div class="inputBx">
                 <p> Enter Name </p>
-                <input type="text" placeholder="Full Name">
+                <input name='name' type="text" placeholder="Name">
             </div>
             <div class="inputBx">
                 <p> Enter Email</p>
-                <input type="text" placeholder="Full Name">
+                <input name='email' type="email" placeholder="Email">
             </div>
             <div class="inputBx">
                 <p> Message </p>
@@ -157,14 +181,61 @@
 
         </div>
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo"> AmbushMG</a>
+            <p> <box-icon name='copyright' color='#e8dfdf'></box-icon> 2023 All rights reserved</p>
+            <ul>
+                <li> <a href="#"><box-icon name='youtube' type='logo' color='#ea0f0f'></box-icon></a></li>
+                <li> <a href="#"></a><box-icon name='twitter' type='logo' color='#00c5f8'></box-icon></li>
+            </ul>
+        </div>
+    </footer>
     <!-- Look this up in MDN -->
     <script>
+
+        /* Form submission */
+        const form = document.querySelector('form');
+        const formData = new FormData();
+
+        function runSubmit(event) {
+            event.preventDefault();
+
+        }
         /* Sticky NavBar*/
 
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        /* Responsive NarBar */
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active');
+            nav.classList.toggle('active');
+
+        }
+
+        /* Scrolling animation*/
+        window.addEventListener('scroll', function () {
+            var anime = document.querySelectorAll('.animeX');
+
+            for (var s = 0; s < anime.length; s++) {
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if (animetop < windowheight - animepoint) {
+                    anime[s].classList.add('active')
+                }
+                else {
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
 
         /* Filterable Cards */
         let list = document.querySelectorAll('.list');
@@ -193,3 +264,5 @@
 </body>
 
 </html>
+
+<!-- G2 player card idea -->
