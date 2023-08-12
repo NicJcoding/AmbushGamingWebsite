@@ -410,7 +410,7 @@ header .action .searchBx input {
 .contact .form .inputBx textarea{
     height: 150px;
 }
-.contact .form .inputBx input[type='submit']{
+.contact .form .inputBx button{
     display: inline-block;
     padding: 10px 20px;
     margin: 15px 0px;
@@ -424,11 +424,12 @@ header .action .searchBx input {
     letter-spacing: 1px;
 
 }
-.contact .form .inputBx input[type='submit']:hover {
+.contact .form .inputBx button:hover {
    background: grey;
    border: none;
    color: white;
    box-shadow: 0 0 10px red;
+   cursor: pointer;
 }
 
 /* Footer */
@@ -492,7 +493,14 @@ footer .info ul li:hover a i{
     transform: translateY(0px);
     opacity: 1;
 }
-
+/* Contact */
+ form input,
+ form textarea {
+     border: 0;
+     margin: 10px 0;
+     padding: 20px;
+     outline: grey;
+ }
 /* Responsive Design */
 @media(max-width: 991px)
 {
@@ -591,9 +599,16 @@ footer .info ul li:hover a i{
     }
     .contact .form h1{
         text-align: center;
+        
     }
     footer .info{
         flex-direction:column ;
+    }
+    form input, form textarea {
+        border:0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: grey;
     }
 
 }

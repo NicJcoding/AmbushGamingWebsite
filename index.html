@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 
 <body>
@@ -163,23 +164,22 @@
         <img src="/images/contactus.png">
         <div class="form">
             <h1> Contact </h1>
-            <div class="inputBx">
-                <p> Enter Name </p>
-                <input name='name' type="text" placeholder="Name">
-            </div>
-            <div class="inputBx">
-                <p> Enter Email</p>
-                <input name='email' type="email" placeholder="Email">
-            </div>
-            <div class="inputBx">
-                <p> Message </p>
-                <textarea placeholder="Type here..."></textarea>
-            </div>
-            <div class="inputBx">
-                <input type="submit" name="submit">
-            </div>
+            <form class="inputBx">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Name">
 
+                <label for="email">Email:</label>
+                <input type='email' id="email" placeholder="Email">
+
+                <label for="msg"> Message:</label>
+                <textarea id="message" rows=" 4" placeholder="Enter message here..."></textarea>
+
+                <button type="submit" name="submit"> Submit</button>
+            </form>
         </div>
+    </div>
+
+    </div>
     </div>
     <!-- Footer -->
     <footer>
@@ -193,16 +193,28 @@
         </div>
     </footer>
     <!-- Look this up in MDN -->
+
     <script>
 
         /* Form submission */
         const form = document.querySelector('form');
-        const formData = new FormData();
 
-        function runSubmit(event) {
-            event.preventDefault();
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); //Prevent html submission 
 
-        }
+            const formData = new FormData(form);
+
+            for (item of formData) {
+                console.log(item[0], item[1]);
+            }
+            fetch('https://httpbin.org/post', {
+                method: "POST",
+                body: formData,
+            })
+                .then(res => res.json)
+                .then(res => console.log(res));
+        })
+        //'application/x-www-form-urlencoded' used for no file attachement
         /* Sticky NavBar*/
 
         window.addEventListener('scroll', function () {
