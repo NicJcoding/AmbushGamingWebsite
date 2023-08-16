@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -23,13 +24,7 @@
             <li><a href="#Roster">Roster</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
-        <div class="action">
-            <div class="searchBx">
-                <a href="#"> <i class='bx bx-search'></i></i></a>
-                <input type="text" placeholder="Search">
 
-            </div>
-        </div>
         <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
 
@@ -149,9 +144,9 @@
                         <li>Player 1: Nixolas</li>
                         <li>Player 2: Tog</li>
                         <li>Player 3: Tony</li>
-                        <li>Player 4: iosIcy</li>
+                        <li>Player 4: Icyios</li>
                         <li>Player 5: Kanata </li>
-
+                        <li>Player 6: Freshy </li>
                     </ul>
                 </div>
             </div>
@@ -164,17 +159,18 @@
         <img src="/images/contactus.png">
         <div class="form">
             <h1> Contact </h1>
-            <form class="inputBx">
-                <label for="name">Name: </label>
-                <input type="text" id="name" placeholder="Name">
+            <form class="inputBx" action="process_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name: "> <br><br>
 
                 <label for="email">Email:</label>
-                <input type='email' id="email" placeholder="Email">
+                <input type="email" id="email" name="email" placeholder="Email: "><br><br>
 
-                <label for="msg"> Message:</label>
-                <textarea id="message" rows=" 4" placeholder="Enter message here..."></textarea>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"
+                    placeholder="Enter message: "></textarea><br><br>
 
-                <button type="submit" name="submit"> Submit</button>
+                <input class="button" type="submit" value="Submit">
             </form>
         </div>
     </div>
@@ -197,23 +193,7 @@
     <script>
 
         /* Form submission */
-        const form = document.querySelector('form');
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault(); //Prevent html submission 
-
-            const formData = new FormData(form);
-
-            for (item of formData) {
-                console.log(item[0], item[1]);
-            }
-            fetch('https://httpbin.org/post', {
-                method: "POST",
-                body: formData,
-            })
-                .then(res => res.json)
-                .then(res => console.log(res));
-        })
         //'application/x-www-form-urlencoded' used for no file attachement
         /* Sticky NavBar*/
 

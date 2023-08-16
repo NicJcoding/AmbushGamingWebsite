@@ -146,8 +146,8 @@ header .action .searchBx input {
     align-items: center;
 }
 .about .contentBx {
-    width: 70%;
-    margin: 20px;
+    width: 80%;
+    margin: 10px;
 }
 .about .contentBx h2{
     font-size: 3em; 
@@ -156,8 +156,9 @@ header .action .searchBx input {
 }
 .about .contentBx p{
     max-width: 600px;
-    text-align: justify;
+    text-align: left;
     color: white;
+    font-size: 17px;
 }
 .about .contentBx a {
     display: inline-block;
@@ -346,7 +347,8 @@ header .action .searchBx input {
 
 }
 .roster .boxBx .box .content{
-    padding:10px
+    padding:10px;
+    text-align: center;
 }
 .roster .boxBx .box .content h3{
     color:#860808;
@@ -355,14 +357,16 @@ header .action .searchBx input {
     justify-content: center;
 }
 .roster .boxBx .box .content ul{
-    text-align: justify;
     color: rgb(233, 223, 223);
-    display: flex;
+    display: inline-block;
+    text-align: left;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 25px;
 }
+
+
 /* Contact Us */
 .contact{
     padding: 20px 100px;
@@ -424,7 +428,7 @@ header .action .searchBx input {
     letter-spacing: 1px;
 
 }
-.contact .form .inputBx button:hover {
+.contact .form .inputBx .button:hover {
    background: grey;
    border: none;
    color: white;
@@ -502,7 +506,7 @@ footer .info ul li:hover a i{
      outline: grey;
  }
 /* Responsive Design */
-@media(max-width: 991px)
+@media screen and (max-width: 850px)
 {
     header{
         padding: 15px 40px;
@@ -613,9 +617,9 @@ footer .info ul li:hover a i{
 
 }
 
-@media(max-width: 600px) {
+@media screen and (max-width: 600px) {
     header {
-            padding: 10px 20px;
+            padding: 10px;
         }
    
     
@@ -641,12 +645,12 @@ footer .info ul li:hover a i{
         }
     
         header .nav li {
-            margin: 20px 0;
+            margin: 10px 0;
         }
     
         header .nav li a {
             font-size: 24px;
-            margin: 10px 0px;
+            margin: 20px 0px;
         }
     
         .toggleMenu {
@@ -776,5 +780,235 @@ footer .info ul li:hover a i{
             margin: 10px 0;
             padding: 20px;
             outline: grey;
+            background-color: #860808;
         }
+}
+
+@media (max-width: 430px) {
+    body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        }
+    element {
+            width: 100%;
+            /* or a relative value */
+            padding: 20px;
+            /* Adjust as needed */
+            box-sizing: border-box;
+        }
+    header {
+        padding: 5px;
+        font-size: 10px
+    }
+    .contact {
+        padding: 10px;
+    }
+    .roster {
+        padding: 10px;
+    }
+
+
+    header .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+        opacity: 93%;
+
+    }
+
+    header .nav.active {
+        display: flex;
+
+    }
+
+    header .nav li {
+     display: none;
+        position: absolute;
+        top: 50px;
+        /* Adjust as needed */
+        right: 20px;
+        background-color: #333;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 5px 0px;
+    }
+
+    .toggleMenu {
+        position: relative;
+        max-width: 30px;
+        height: 30px;
+        background: url(/images/menu-regular-24.png);
+        background-position: center;
+        background-size: 60px;
+        cursor: pointer;
+        z-index: 1001;
+        margin: 10px;
+
+    }
+
+    .toggleMenu.active {
+        background: url(/images/x-regular-24.png);
+        background-position: center;
+        background-size: 60px;
+        background-repeat: no-repeat;
+    }
+    .banner {
+        padding: 10px;
+    }
+    .about {
+        padding: 10px;
+    }
+    .banner .bg {
+        width: 100%;
+        
+    }
+    .banner .bg img {
+        position: absolute;
+        max-width: 60%;
+    }
+
+    .banner .bg .content {
+        max-width: 100%;
+        height: 100%;
+        background: grey;
+        opacity: 98%;
+        z-index: 1;
+        border-radius: 10px;
+
+    }
+
+    .banner .bg .content p {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+
+    }
+
+    .banner .bg .content h2 {
+        color: rgb(158, 9, 9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        margin: 20px;
+        font-size: 40px;
+    }
+
+    .banner .bg .content a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+
+    .about {
+        flex-direction: wrap;
+        width: 100%;
+    }
+
+    .about .contentBox {
+        max-width: 100%;
+        height: 100px
+    }
+    .about .contentBox p {
+            font-size: 8px;
+            
+        }
+    .about img{
+        max-width: 100%;
+        height: 80%;
+        }
+    .contact {
+        flex-direction: column;
+    }
+    .games{
+        padding: 10px;
+    }
+
+    .games .cardBox .card .info p {
+        font-size: 8px;
+    }
+     .games .cardBox {
+        width:100%;
+     }
+
+    
+    .games .cardBox .card .info a {
+        display: inline-block;
+        padding: 5px 5px;
+        margin: 10px 0;
+        border: 1px solid white;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 10px
+    }
+
+    .games .cardBox .card .info a:hover {
+        background: rgb(3, 0, 0);
+        border: none;
+        color: #ffffff;
+        box-shadow: 0 0 10px red;
+    }
+    .roster {
+        padding: 10px;
+    }
+
+    .roster .boxBx .box img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .roster .boxBx .box ul li {
+        font-size: 10px;
+    }
+
+    .contact img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact .form {
+        max-width: 100%;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .contact .form h1 {
+        text-align: center;
+
+    }
+
+    footer .info {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea {
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: grey;
+        background-color: #860808;
+    }
 }
