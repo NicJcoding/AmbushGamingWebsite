@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ambush Roster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo">AMBU </a>
+        <ul class="nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">About</a></li>
+            <li><a href="/index.html">Games</a></li>
+            <li><a href="/index.html">Rosters</a></li>
+            <li><a href="/index.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+    <h1> </h1>
+
+    <div class="roster " id="Roster">
+        <h2> </h2>
+        <div class='boxBx'>
+            <div class="box">
+                <img src="/rainbowimages/R6bannerRoster.png">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player-card Nixolasrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Nixolas </h2>
+                    <p> IGL/Captain</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back"></div>
+            </div>
+
+        </div>
+
+        <div class="player-card Tograinbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Tog </h2>
+                    <p> Ambu </p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="player-card Tonyrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Saxy </h2>
+                    <p> Ambu</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="player-card Sinsrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Sins </h2>
+                    <p>Ambu</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="player-card Kanatarainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Kanata </h2>
+                    <p> Ambu</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="player-card Freshyrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Freshy </h2>
+                    <p> Ambu</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+        </div>
+        <div class="player-card Icyrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Icy </h2>
+                    <p> Ambu</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="player-card Nomzyrainbow">
+            <div class="card-inner">
+                <div class="front">
+                    <h2> Nomzy </h2>
+                    <p> Manager</p>
+                    <button> Ambu</button>
+                </div>
+                <div class="back">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo"> AmbushMG</a>
+            <p> <box-icon name='copyright' color='#e8dfdf'></box-icon> 2023 All rights reserved</p>
+            <ul>
+                <li> <a href="https://www.youtube.com/@AmbushMobileGaming"><box-icon name='youtube' type='logo'
+                            color='#ea0f0f'></box-icon></a></li>
+                <li> <a href="https://twitter.com/AmbushMG"></a><box-icon name='twitter' type='logo'
+                        color='#00c5f8'></box-icon></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+
+        /* Header scroll animation*/
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        /* navbar list */
+
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        const menuItems = document.querySelectorAll('.nav a'); // Select all menu items
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                toggleMenu(); // Close the menu when an item is clicked
+            });
+        });
+
+    </script>
+</body>
+
+</html>

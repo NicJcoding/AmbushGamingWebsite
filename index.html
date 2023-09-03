@@ -2,26 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR4F8B9WPP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SR4F8B9WPP');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambush Gaming</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
     <header>
-        <a href="#" class="logo">Ambush Gaming </a>
+        <a href="/index.html" class="logo">AMBU </a>
         <ul class="nav">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Games">Games</a></li>
-            <li><a href="#Roster">Roster</a></li>
+            <li><a href="#Games">Rosters</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
 
@@ -29,7 +40,7 @@
     </header>
 
     <!----- Home Banner---->
-    <div class="banner animeX" id="Home">
+    <div class="banner" id="Home">
         <div class="bg">
             <div class="content">
                 <h2> Welcome </h2>
@@ -45,24 +56,35 @@
     <div class="about animeX" id="About">
         <div class="contentBx">
             <h2> About Us</h2>
-            <p> Ambush Gaming is aiming to be one of the best mobile gaming organizations in the world! Our team was
-                founded off of friendship first. <br><br>
-                We have been friends and competing in mobile games for nearly 6 years. Most of us starting our
-                professional career from Rules of Survival. We have competed in the following: $20,000 Live me
-                tournament and three $60,000.00 tournaments.<br><br>
-                After rules of survival, our team decided to make our away into Call of Duty Mobile. We competed in
-                Mobile Mayhem, but once call of duty mobile decided to take a different path, we did as well. Aftt Call
-                of Duty Mobile, we decided to play Area F2 and Wild Rift. <br><br> After those 2 games,
-                we decided to play Apex Mobile. Our team performed in the only 2 Mobile Mayhem events that Apex Mobile
-                had. <br> <br>
-                We are now competing in Farlight 84 and we are the best team in North America by far. Ambush
-                is dedicated on being the best organization in mobile gaming. We want to pick up the best teams while
-                valuing friendship first. Remember, laughing with friends and winning tournaments is the best
-                combination.
+            <p> Ambush Gaming is a competitive group of friends that plan to compete at the highest level in Mobile
+                Gaming! Our team was founded off of friendship first. <br><br>
 
+                We have been friends and competing in mobile games for nearly 6 years. Most of us starting our
+                professional career from Rules of Survival. We have competed in the following: $10,000 Live me
+                tournament and three $60,000.00 tournaments.<br><br>
             </p>
-            <a href="#"> Read more</a>
+            <div class="hidden">
+                <p>
+                    After rules of survival, our team decided to make our away into Call of Duty Mobile. We competed in
+                    Mobile Mayhem, but once call of duty mobile decided to take a different path, we did as well. After
+                    Call
+                    of Duty Mobile, we decided to play Area F2 and Wild Rift. <br><br>
+
+                    After those 2 games, we decided to play Apex Mobile. Our team performed in the only 2 Mobile Mayhem
+                    events that Apex Mobile
+                    had. <br> <br>
+
+
+                    We are now competing in Farlight 84, where we have established our team as the best team in North
+                    America. We are also competiting in Rainbow Six Mobile! Ambush
+                    is dedicated on being the best team in all games. We want to pick up the best players while
+                    valuing friendship first. Remember, laughing with friends and winning tournaments is the best
+                    combination.
+                </p>
+            </div>
+            <button class="read-more-button">Read More</button>
         </div>
+
         <img src="images/AmbushRoleLogoClean (1).png">
     </div>
     <!-- Games -->
@@ -72,6 +94,19 @@
             <li class="list active" data-filter="mobile"> Mobile games</li>
         </ul>
         <div class="cardBox">
+
+            <div class="card" data-item="mobile">
+                <img src="images/rainbow_six_siege_logo_header._1.jpg ">
+                <div class="content">
+                    <h4> Rainbow Six Mobile </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class="info">
+                        <p> Team AMBU is currently working on our roster. </p>
+                        <a href="/rainbowroster.html"> Roster</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="card" data-item="mobile">
                 <img src="images/farlight84hd.jpeg ">
                 <div class="content">
@@ -79,7 +114,7 @@
                     <div class="progress-line"> <span></span></div>
                     <div class="info">
                         <p> Team AMBU is currently the best team in this Battle Royale game. </p>
-                        <a href="#Roster"> Roster</a>
+                        <a href="/farlightroster.html"> Roster</a>
                     </div>
                 </div>
             </div>
@@ -133,43 +168,29 @@
     </div>
 
     <!-- Roster -->
-    <div class="roster animeX" id="Roster">
-        <h2> AMBU </h2>
-        <div class='boxBx'>
-            <div class="box">
-                <img src="/images/84Roster.png">
-                <div class="content">
-                    <h3> Roster: </h3>
-                    <ul>
-                        <li>Player 1: Nixolas</li>
-                        <li>Player 2: Tog</li>
-                        <li>Player 3: Tony</li>
-                        <li>Player 4: Icyios</li>
-                        <li>Player 5: Kanata </li>
-                        <li>Player 6: Freshy </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+
 
     <!-- Contact Us -->
     <div class="contact animeX" id="Contact">
         <img src="/images/contactus.png">
         <div class="form">
-            <h1> Contact </h1>
+            <h1> Contact Ambush Gaming </h1>
             <form class="inputBx" action="process_form.php" method="post">
-                <label for="name">Name:</label>
+
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter Name: "> <br><br>
 
-                <label for="email">Email:</label>
+
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email: "><br><br>
 
-                <label for="message">Message:</label><br>
+                <p>Why do you want to join Ambush? Are you interested in management, content, or playing?</p>
+                <label for="message">Enter Message: </label><br>
                 <textarea id="message" name="message" rows="4" cols="50"
                     placeholder="Enter message: "></textarea><br><br>
 
+                <p> If Ambush has an interest in you, we will be reaching out to you! Thank you for your interest!
+                    #AmbushOnTop</p>
                 <input class="button" type="submit" value="Submit">
             </form>
         </div>
@@ -183,19 +204,16 @@
             <a href="#" class="logo"> AmbushMG</a>
             <p> <box-icon name='copyright' color='#e8dfdf'></box-icon> 2023 All rights reserved</p>
             <ul>
-                <li> <a href="#"><box-icon name='youtube' type='logo' color='#ea0f0f'></box-icon></a></li>
-                <li> <a href="#"></a><box-icon name='twitter' type='logo' color='#00c5f8'></box-icon></li>
+                <li> <a href="https://www.youtube.com/@AmbushMobileGaming"><box-icon name='youtube' type='logo'
+                            color='#ea0f0f'></box-icon></a></li>
+                <li> <a href="https://twitter.com/AmbushMG"></a><box-icon name='twitter' type='logo'
+                        color='#00c5f8'></box-icon></li>
             </ul>
         </div>
     </footer>
     <!-- Look this up in MDN -->
 
     <script>
-
-        /* Form submission */
-
-        //'application/x-www-form-urlencoded' used for no file attachement
-        /* Sticky NavBar*/
 
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
@@ -208,8 +226,32 @@
             const nav = document.querySelector('.nav');
             toggleMenu.classList.toggle('active');
             nav.classList.toggle('active');
-
         }
+
+        const menuItems = document.querySelectorAll('.nav a'); // Select all menu items
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                toggleMenu(); // Close the menu when an item is clicked
+            });
+        });
+
+
+        /* Read more button */
+
+        // Select all the read more buttons and hidden contents
+        const readMoreButtons = document.querySelectorAll(".read-more-button"); const hiddenContents = document.querySelectorAll(".hidden");
+        // Now loop over the read more buttons 
+        readMoreButtons.forEach((readMoreButton, index) => {
+            // Add onclick event listeners to all of them
+            readMoreButton.addEventListener("click", () => {
+                // Change content of read more button to read less based on the textContent
+                if (readMoreButton.textContent === "Read More") { readMoreButton.textContent = "Read Less"; }
+                else { readMoreButton.textContent = "Read More"; }
+                // Toggle class based on index
+                hiddenContents[index].classList.toggle("hidden");
+            })
+        })
 
         /* Scrolling animation*/
         window.addEventListener('scroll', function () {
@@ -252,6 +294,8 @@
                 }
             })
         }
+
+
     </script>
 </body>
 

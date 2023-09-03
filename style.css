@@ -148,6 +148,8 @@ header .action .searchBx input {
 .about .contentBx {
     width: 80%;
     margin: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 }
 .about .contentBx h2{
     font-size: 3em; 
@@ -159,19 +161,24 @@ header .action .searchBx input {
     text-align: left;
     color: white;
     font-size: 17px;
+
+} 
+.about .contentBx .hidden {
+    display: none;
 }
-.about .contentBx a {
-    display: inline-block;
+.about .contentBx .read-more-button {
     padding: 10px 20px;
     margin: 20px 0;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 0, 0);
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
-    color: white;
+    color: rgb(3, 1, 1);
     letter-spacing: 1px;
+    opacity: 80%;
+    
 }
-.about .contentBx a:hover {
+.about .contentBx .read-more-button:hover {
     background: rgb(156, 13, 13);
     border: none;
     color:#000000;
@@ -406,7 +413,7 @@ header .action .searchBx input {
     padding: 10px;
     width: 100%;
     color: white;
-    background: rgb(36, 0, 0);
+    background: rgb(107, 5, 5);
     min-height: 15px;
     font-size: 1.1em;
 
@@ -506,7 +513,7 @@ footer .info ul li:hover a i{
      outline: grey;
  }
 /* Responsive Design */
-@media screen and (max-width: 850px)
+@media screen and (max-width: 991px)
 {
     header{
         padding: 15px 40px;
@@ -784,7 +791,7 @@ footer .info ul li:hover a i{
         }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     body {
             margin: 0;
             padding: 0;
@@ -830,19 +837,6 @@ footer .info ul li:hover a i{
         display: flex;
 
     }
-
-    header .nav li {
-     display: none;
-        position: absolute;
-        top: 50px;
-        /* Adjust as needed */
-        right: 20px;
-        background-color: #333;
-        max-width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
     header .nav li a {
         font-size: 24px;
         margin: 5px 0px;
@@ -1009,6 +1003,278 @@ footer .info ul li:hover a i{
         margin: 10px 0;
         padding: 20px;
         outline: grey;
-        background-color: #860808;
+        background-color: #ba1d1d;
     }
+}
+
+
+
+
+
+
+
+
+
+
+/* FarlightRoster.html */
+.player {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135def, #eb1010, #a99bf9);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.player-card {
+    width: 250px;
+    height: 415px;
+    margin: 20px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(125, 2, 2);
+ 
+
+}
+.Nixolas {
+    background: url(/rosterimages/sypher84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+.Tog {
+    background: url(/rosterimages/ember84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+.Tony {
+    
+    background: url(/rosterimages/lucinda84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+}
+.Icy {
+    background: url(/rosterimages/Maggie.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+}
+.Kanata {
+    background: url(/rosterimages/phantom84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+.Freshy {
+    background: url(/rosterimages/phantom84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+
+}
+.Nomzy {
+    background: url(/rosterimages/phantom84.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+
+}
+
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.front  .back{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+
+.front h2{ 
+    font-size: 30px;
+    color: rgba(0, 255, 0, 0.933);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+}
+.front p {
+    color: rgb(253, 250, 250);
+    font-size: 15;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+.front button{
+    width: 120px;
+    border: 1px solid rgb(62, 60, 60);
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin: 55px;
+    color: red;
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* RAINBOWROSTER.HTML */
+.player {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135def, #eb1010, #a99bf9);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.player-card {
+    width: 250px;
+    height: 415px;
+    margin: 20px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(125, 2, 2);
+
+
+}
+
+.Nixolasrainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+.Tograinbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+.Tonyrainbow {
+
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+}
+
+.Icyrainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+}
+
+.Kanatarainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+.Freshyrainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+
+}
+.Sinsrainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+
+}
+
+.Nomzyrainbow {
+    background: url(/rainbowimages/rainbowmainchar.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+
+}
+
+
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.front .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+
+.front h2 {
+    font-size: 30px;
+    color: rgba(0, 255, 0, 0.933);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+}
+
+.front p {
+    color: rgb(253, 250, 250);
+    font-size: 15;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid rgb(62, 60, 60);
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin: 55px;
+    color: red;
+
+
 }
