@@ -1017,7 +1017,7 @@ footer .info ul li:hover a i{
 
 
 /* FarlightRoster.html */
-.player {
+.playerf {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135def, #eb1010, #a99bf9);
@@ -1029,7 +1029,7 @@ footer .info ul li:hover a i{
     flex-wrap: wrap;
    
 }
-.player-card {
+.player-cardf {
     width: 250px;
     height: 415px;
     margin: 20px;
@@ -1045,45 +1045,45 @@ footer .info ul li:hover a i{
 
 }
 .Nixolas {
-    background: url(/rosterimages/sypher84.jpeg);
+    background: url(/farlightrosterimages/sypher84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 90%;
 }
 .Tog {
-    background: url(/rosterimages/ember84.jpeg);
+    background: url(/farlightrosterimages/ember84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 90%;
 }
 .Tony {
     
-    background: url(/rosterimages/lucinda84.jpeg);
+    background: url(/farlightrosterimages/lucinda84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 80%;
 }
 .Icy {
-    background: url(/rosterimages/Maggie.jpg);
+    background: url(/farlightrosterimages/Maggie.jpg);
     background-size: cover;
     background-position: center;
     opacity: 80%;
 }
 .Kanata {
-    background: url(/rosterimages/phantom84.jpeg);
+    background: url(/farlightrosterimages/phantom84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 90%;
 }
 .Freshy {
-    background: url(/rosterimages/phantom84.jpeg);
+    background: url(/farlightrosterimages/phantom84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 90%;
 
 }
 .Nomzy {
-    background: url(/rosterimages/phantom84.jpeg);
+    background: url(/farlightrosterimages/phantom84.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 90%;
